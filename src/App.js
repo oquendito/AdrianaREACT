@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
+import "./App.css";
+import ItemListContainer from "./components/ItemContainerList/ItemListContainer";
+import Navbar from './components/NavBar/Navbar'
 
 function App() {
   return (
     <>
-   <Navbar/>
+      <Navbar />
+      <ItemListContainer/>
     </>
-
   );
 }
 
