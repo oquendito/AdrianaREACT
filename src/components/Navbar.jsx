@@ -1,24 +1,27 @@
 import React from 'react'
+import CartWidget from '../CartWidget'
 import './StyledNav.css'
+import Logo from '../Logo'
 
-const Navbar = () => {
-
+function navbar() {
   return (
-      <>
-    <header>
-      <nav>
-        <h1 id="main-logo" >
-          <span>FeliFelinos</span>
-        </h1>
-        <ul id="main-menu">
-          <li>Inicio</li>
-          <li>Catálogo</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
-    </header>
-    </>
+      <div className="navbar">
+          <div className="navbar-menu">
+              <div>
+                  <Logo />
+              </div>
+              <ul>
+                  <li><a>HOME</a></li>
+                  <li><a>CATÁLOGO</a></li>
+                  <li><a>ABOUT US</a></li>
+                  <li><a>CONTACTO</a></li>
+              </ul>
+              <div>
+                  <CartWidget />
+              </div>
+          </div>
+      </div>
   )
 }
 
-export default Navbar
+export default navbar
