@@ -1,0 +1,7 @@
+.navbar-logo{
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    margin-left: 2rem;
+    width: 30%
+  }
